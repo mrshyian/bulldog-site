@@ -1,6 +1,5 @@
-from flask import Flask, request, render_template, redirect, session, url_for
-import data_manager
-import util
+from flask import Flask, render_template
+
 
 
 app = Flask(__name__)
