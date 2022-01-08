@@ -1,0 +1,193 @@
+{% extends 'header.html' %}
+{% block content %}
+
+<div class="o_nas_text">
+    <table>
+        <section class="section0 element-animation naglowek">Cześć! Nazywamy się Władek i Ola Shiyan. Jesteśmy rodzicami
+            trójki
+            dzieci,
+            z których dwoje pomaga nam przy każdej sesji zdjęciowej, dlatego nazwaliśmy na ich cześć nasz team.
+        </section>
+        <tr>
+            <td>
+                <div>
+                    <section class="section1 from-left ola">To Ola. To ona układa te wszystkie szalone stylizacje i to
+                        dzięki niej nasze
+                        śliczne
+                        modelki wyglądają jeszcze bardziej atrakcyjnie i uroczo.
+                    </section>
+                </div>
+            </td>
+            <td>
+                <img class=" from-right for_image1" src="/static/images/ola.JPG">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img class="for_image2 from-left" src="/static/images/ja.JPG">
+            </td>
+            <td>
+                <section class="section2  from-right wladek">To Władek. Jego zadaniem jest uchwycenie momentu, który
+                    później będzie przyciągał i utrzymywał spojrzenia.
+                </section>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <section class="section3 from-left kinder">To jest nasz "duży chłopiec". Nazywa się Kinder. Uwielbia
+                    przytulanki i uwagę pięknych modelek, więc dziewczyny przygotujcie się na to, że na czas sesji on do
+                    was się przyklei.
+                </section>
+            </td>
+            <td>
+                <img class="for_image1 from-right" src="/static/images/kinder.JPG">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img class="for_image2 from-left" src="/static/images/bueno.JPG">
+            </td>
+            <td>
+                <section class="section4 from-right bueno">To jest nasza "dzidzia" o imieniu Bueno. Jest jeszcze bardzo
+                    mała i nie zabieramy jej jeszcze ze sobą do pracy. Uwielbia spać (jak my wszyscy), ale tylko ona ma
+                    na to czas :)
+                </section>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <section class="section5 from-left busia">To jest nasza mama kotka Busia. Nie lubi wychodzić poza swoją
+                    strefę komfortu, dlatego zawsze z radością wita nas w domu.
+                </section>
+            </td>
+            <td>
+                <img class="for_image1 from-right" src="/static/images/busia.JPG">
+            </td>
+        </tr>
+    </table>
+</div>
+<script>
+
+    let idNaglowka = document.getElementsByClassName('o_nas-a')[0]
+    idNaglowka.style.backgroundColor = '#737373'
+
+    let idNaglowka1 = document.getElementsByClassName('o_nas-h1')[0]
+    idNaglowka1.style.color = "black"
+
+    let options = {
+        threshold: [0.5]
+    };
+    let observer = new IntersectionObserver(onEntry, options);
+    let elements = document.querySelectorAll('.element-animation');
+    let leftSlide = document.querySelectorAll('.from-left');
+    let fromRight = document.querySelectorAll('.from-right');
+
+
+    for (let elm of elements) {
+        observer.observe(elm);
+    }
+
+    for (let left of leftSlide) {
+        observer.observe(left);
+    }
+
+    for (let right of fromRight) {
+        observer.observe(right);
+    }
+
+
+    function onEntry(entry) {
+        entry.forEach(change => {
+            if (change.isIntersecting) {
+                change.target.classList.add('element-show');
+
+            }
+        });
+    }
+
+    const langArr = {
+        'naglowek': {
+            'pl': 'Cześć! Nazywamy się Władek i Ola Shiyan. Jesteśmy "rodzicami" trójki "dzieci", z których dwoje pomaga nam przy każdej sesji zdjęciowej, dlatego nazwaliśmy na ich cześć nasz team.',
+            'en': 'Hi, our names are Vlad and Alyona Shiyan. We are the "parents" of three "kids", two of whom help us in every photo shoot, so we named our team after them.',
+            'ru': 'Привет, нас зовут Влад и Алёна Шиян. Мы "родители" троих "детей", двое из которых помогают нам в каждой фотосессии, поэтому мы назвали нашу команду в их честь.'
+        },
+        'wladek': {
+            'pl': 'To Władek. Jego zadaniem jest uchwycenie momentu, który później będzie przyciągał i utrzymywał spojrzenia.',
+            'en': 'This is Vladyslav. His job is to capture the moment that will later attract and hold the stares.',
+            'ru': 'Это Влад. Его задача - поймать момент, который будет привлекать и удерживать взгляд.'
+        },
+        'ola': {
+            'pl': 'To Ola. To ona układa te wszystkie szalone stylizacje i to dzięki niej nasze śliczne modelki wyglądają jeszcze bardziej atrakcyjnie i uroczo.',
+            'en': 'This is Olena. She is the one who puts together all these crazy looks, and she makes our beautiful models look even more attractive and charming.',
+            'ru': 'Это Алёна. Именно она собирает все эти безумные образы, и благодаря ей наши прекрасные модели выглядят еще более привлекательными и очаровательными.'
+        },
+        'kinder': {
+            'pl': 'To jest nasz "duży chłopiec". Nazywa się Kinder. Uwielbia przytulanki i uwagę pięknych modelek, więc dziewczyny przygotujcie się na to, że na czas sesji on do was się przyklei.\n',
+            'en': 'This is our "big boy." His name is Kinder. He loves cuddles and attention from beautiful models, so girls be prepared to have him glued to you for the duration of the shoot.',
+            'ru': 'Это наш "большой мальчик". Его зовут Киндер. Он обожает обниматься и внимание красивых моделей, поэтому девушки будьте готовы к тому, что он  приклеется к вам на протяжении всей съемки.'
+        },
+        'bueno': {
+            'pl': 'To jest nasza "dzidzia" o imieniu Bueno. Jest jeszcze bardzo mała i nie zabieramy jej jeszcze ze sobą do pracy. Uwielbia spać (jak my wszyscy), ale tylko ona ma na to czas :)',
+            'en': 'This is our "baby" named Bueno. She is still very small and we don\'t take her with us to work yet. She loves to sleep (like all of us), but only she has time for it :)',
+            'ru': 'Это наша "малышка" Буэно. Она еще очень маленькая, и мы пока не берем ее с собой на работу. Она любит спать (как и все мы), но только у нее есть на это время :)'
+        },
+        'busia': {
+            'pl': 'To jest nasza mama kotka Busia. Nie lubi wychodzić poza swoją strefę komfortu, dlatego zawsze z radością wita nas w domu.',
+            'en': 'This is our mama-cat Busia. She doesn\'t like to go outside her comfort zone, so she is always happy to welcome us home.',
+            'ru': 'Это наша мама-кошка Буся. Она не любит выходить за пределы своей зоны комфорта, поэтому всегда с радостью встречает нас дома.'
+        },
+        'main-page-h1': {
+            'pl': 'Główna',
+            'en': 'Main page',
+            'ru': 'Главня'
+        },
+        'cennik-h1': {
+            'pl': 'Cennik',
+            'en': 'Price list',
+            'ru': 'Прайс'
+        },
+        'kontakt-h1': {
+            'pl': 'Kontakt',
+            'en': 'Contact',
+            'ru': 'Контакт'
+        },
+        'o_nas-h1': {
+            'pl': 'O nas',
+            'en': 'About us',
+            'ru': 'О нас'
+        },
+        'title': {
+            'pl': 'Bulldog Photo - Kobieca fotografia',
+            'en': 'Bulldog Photo - Women\'s photography',
+            'ru': 'Bulldog Photo - Женская фотография'
+        }
+    };
+    const allLang = ['ru', 'pl', 'en']
+    const select = document.querySelector('select');
+    select.addEventListener('change', changeURLLanguage);
+    console.log(select)
+
+    function changeURLLanguage() {
+        let lang = select.value;
+        location.href = window.location.pathname + '#' + lang;
+        location.reload()
+    }
+
+    function changeLanguage() {
+        let hash = window.location.hash
+        hash = hash.substring(1)
+        if (!allLang.includes(hash)) {
+            location.href = window.location.pathname + '#pl';
+            location.reload()
+        }
+        select.value = hash;
+        for (let key in langArr) {
+            document.querySelector('.' + key).innerHTML = langArr[key][hash]
+        }
+    }
+
+    changeLanguage()
+
+</script>
+
+{% endblock %}

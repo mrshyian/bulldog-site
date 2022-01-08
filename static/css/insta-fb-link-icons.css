@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    position: absolute;
+    top: 5%;
+    left: 4%;
+    transform: translate(-50%, -50%);
+}
+
+.a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background: #101010;
+    margin: 1px;
+    border-radius: 30%;
+    text-align: center;
+}
+
+.i {
+    color: #f1f1f1;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.a:hover {
+    background: #f1f1f1;
+    transition: 1s;
+}
+
+.a:hover .i {
+    color: #101010;
+    transition: 1s;
+    transform: scale(1.3);
+}
+
+
+/*social media Władek*/
+
+.container1 {
+    position: absolute;
+    top: 45%;
+    left: 38%;
+}
+
+.wladek-a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background: #ffffff;
+    margin: 1px;
+    border-radius: 30%;
+    text-align: center;
+}
+
+.wladek-i {
+    color: #101010;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.wladek-a:hover {
+    background: #101010;
+    transition: 1s;
+}
+
+.wladek-a:hover .wladek-i {
+    color: #ffffff;
+    transition: 1s;
+    transform: scale(1.3);
+}
+
+/*social media Ola*/
+
+.container2 {
+    position: absolute;
+    top: 103%;
+    left: 38%;
+}
+
+.ola-a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background: #ffffff;
+    margin: 1px;
+    border-radius: 30%;
+    text-align: center;
+}
+
+.ola-i {
+    color: #101010;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.ola-a:hover {
+    background: #101010;
+    transition: 1s;
+}
+
+.ola-a:hover .ola-i {
+    color: #ffffff;
+    transition: 1s;
+    transform: scale(1.3);
+}

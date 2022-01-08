@@ -1,0 +1,103 @@
+{% extends 'header.html' %}
+{% block content %}
+<div class="o_nas_text kontakt kontakt-position">
+    <div class="onas-wladek"></div>
+    <h3 class="naglowek">REZERWACJE KOMERCYJNE/ZAPYTANIA</h3>
+
+    <br>
+    <div class="wladek">Władek Shyian</div>
+    +48 731 469 034
+    <br>shyvlad1994@gmail.com
+    <div class="container1">
+        <a class="wladek-a" href="https://www.instagram.com/mr_shyian/"><i class="fab fa-instagram wladek-i"></i></a>
+        <a class="wladek-a" href="https://www.facebook.com/vlad.shiyan.37"><i
+                class="fab fa-facebook-f wladek-i"></i></a>
+    </div>
+
+    <br><br><br><br><br>
+    <div class="ola">Ola Shyian</div>
+    +48 733 982 407
+    <br>mivinka23@gmail.com
+    <div class="container2">
+        <a class="ola-a" href="https://www.instagram.com/shyian_olena_/"><i class="fab fa-instagram ola-i"></i></a>
+        <a class="ola-a" href="https://www.facebook.com/dobrovolskaia.i"><i class="fab fa-facebook-f ola-i"></i></a>
+    </div>
+</div>
+
+
+<script>
+    let idNaglowka = document.getElementsByClassName('kontakt-a')[0]
+    idNaglowka.style.backgroundColor = '#737373'
+
+    let idNaglowka1 = document.getElementsByClassName('kontakt-h1')[0]
+    idNaglowka1.style.color = "black"
+
+    const langArr = {
+        'naglowek': {
+            'pl': 'REZERWACJE KOMERCYJNE/ZAPYTANIA',
+            'en': 'COMMERCIAL BOOKINGS/QUESTIONS',
+            'ru': 'КОММЕРЧЕСКАЯ РЕЗЕРВАЦИЯ/ВОПРОСЫ'
+        },
+        'wladek': {
+            'pl': 'Władek Shyian',
+            'en': 'Vladyslav Shyian',
+            'ru': 'Владислав Шиян'
+        },
+        'ola': {
+            'pl': 'Ola Shyian',
+            'en': 'Olena Shyian',
+            'ru': 'Алёна Шиян'
+        },
+        'main-page-h1': {
+            'pl': 'Główna',
+            'en': 'Main page',
+            'ru': 'Главня'
+        },
+        'cennik-h1': {
+            'pl': 'Cennik',
+            'en': 'Price list',
+            'ru': 'Прайс'
+        },
+        'kontakt-h1': {
+            'pl': 'Kontakt',
+            'en': 'Contact',
+            'ru': 'Контакт'
+        },
+        'o_nas-h1': {
+            'pl': 'O nas',
+            'en': 'About us',
+            'ru': 'О нас'
+        },
+        'title': {
+            'pl': 'Bulldog Photo - Kobieca fotografia',
+            'en': 'Bulldog Photo - Women\'s photography',
+            'ru': 'Bulldog Photo - Женская фотография'
+        }
+    };
+    const allLang = ['ru', 'pl', 'en']
+    const select = document.querySelector('select');
+    select.addEventListener('change', changeURLLanguage);
+    console.log(select)
+
+    function changeURLLanguage() {
+        let lang = select.value;
+        location.href = window.location.pathname + '#' + lang;
+        location.reload()
+    }
+
+    function changeLanguage() {
+        let hash = window.location.hash
+        hash = hash.substring(1)
+        if (!allLang.includes(hash)) {
+            location.href = window.location.pathname + '#pl';
+            location.reload()
+        }
+        select.value = hash;
+        for (let key in langArr) {
+            document.querySelector('.' + key).innerHTML = langArr[key][hash]
+        }
+    }
+
+    changeLanguage()
+</script>
+{% endblock %}

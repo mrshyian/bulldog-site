@@ -1,0 +1,218 @@
+.container12 {
+    position: absolute;
+    width: 30%;
+    left: 10%;
+    top: 45%;
+
+}
+
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 0.3s ease;
+    background-color: #474747;
+    box-shadow: 10px 7px 18px 7px rgba(0, 0, 0, 0.8), 0 26px 14px 0 rgba(0, 0, 0, 0.59);
+
+
+}
+
+.container12:hover .overlay {
+    opacity: 0.7;
+}
+
+.text {
+    color: white;
+    font-size: 22px;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.container123 {
+    position: absolute;
+    width: 30%;
+    left: 60%;
+    top: 45%;
+}
+
+.image1 {
+    display: block;
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.overlay1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 0.3s ease;
+    background-color: #474747;
+    box-shadow: 10px 7px 18px 7px rgba(0, 0, 0, 0.8), 0 26px 14px 0 rgba(0, 0, 0, 0.59);
+
+}
+
+.container123:hover .overlay1 {
+    opacity: 0.7;
+}
+
+
+.container-nadlowek-pakiet1 {
+    position: absolute;
+    top: 133%;
+    width: 25%;
+    left: 12%;
+}
+
+.image2 {
+    display: block;
+    width: 100%;
+    height: auto;
+    position: relative;
+
+}
+
+.text1 {
+    color: black;
+    font-size: 20px;
+    position: absolute;
+    top: 34%;
+    left: 53%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.container-nadlowek-pakiet2 {
+    position: absolute;
+    top: 134%;
+    width: 20%;
+    left: 65%;
+
+}
+
+.image3 {
+    display: block;
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.text2 {
+    color: black;
+    font-size: 20px;
+    position: absolute;
+    top: 34%;
+    left: 53%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
+.wybierz-pakiet {
+    position: absolute;
+    left: 40%;
+    top: 28%;
+    font-size: 30px;
+}
+
+.info-dod1 {
+    position: absolute;
+    top: 110%;
+    left: 110%;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.info-dod2 {
+    position: absolute;
+    top: 105%;
+    left: -50%;
+}
+
+.image4 {
+    display: block;
+    width: 65%;
+    height: auto;
+    position: relative;
+}
+
+.text3 {
+    color: black;
+    font-size: 13px;
+    position: absolute;
+    top: 37%;
+    left: 10%;
+    text-align: center;
+}
+
+
+.sdiv:hover .cennik-dodatki {
+    display: block;
+    background: #000000; /* Цвет фона */
+    color: #ffffff; /* Цвет текста */
+
+}
+
+.sdiv .cennik-dodatki {
+    display: none;
+    border-radius: 10px;
+}
+
+.cennik-dodatki {
+    position: absolute;
+    width: 600%;
+    font-size: 20px;
+    left: -300%;
+    top: -2050%;
+    box-shadow: 10px 7px 18px 7px rgba(0, 0, 0, 0.8), 0 26px 14px 0 rgba(65, 64, 64, 0.59);
+
+}
+
+.sdiv1:hover .cennik-dodatki1 {
+    display: block;
+    background: #000000; /* Цвет фона */
+    color: #ffffff; /* Цвет текста */
+
+
+}
+
+.sdiv1 .cennik-dodatki1 {
+    display: none;
+    border-radius: 10px;
+
+}
+
+.cennik-dodatki1 {
+    position: absolute;
+    width: 600%;
+    font-size: 20px;
+    left: 110%;
+    top: -205%;
+    box-shadow: 10px 7px 18px 7px rgba(0, 0, 0, 0.8), 0 26px 14px 0 rgba(65, 64, 64, 0.59);
+}

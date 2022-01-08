@@ -1,0 +1,73 @@
+
+
+.element-animation {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    -ms-transform: translateY(-20px);
+    transform: translateY(-20px);
+    -webkit-transition: all 1.5s;
+    -o-transition: all 1.5s;
+    transition: all 2.5s;
+
+}
+
+.element-animation.element-show {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+}
+
+.from-left {
+    opacity: 0;
+}
+
+@keyframes mymove {
+    from {
+        right: 50px;
+    }
+    to {
+        right: 0px;
+    }
+}
+
+
+.from-left.element-show {
+    opacity: 1;
+    transition: all 2.5s;
+    position: relative;
+    animation: mymove 1.7s;
+    animation-timing-function: linear;
+
+}
+
+.from-right {
+    opacity: 0;
+}
+
+
+@keyframes mymove1 {
+    from {
+        right: -110px;
+    }
+    to {
+        right: 0px;
+    }
+}
+
+.from-right.element-show {
+    opacity: 1;
+    transition: all 2.5s;
+    position: relative;
+    animation: mymove1 1.7s;
+    animation-timing-function: linear;
+}
+
+
+.lapka {
+    background-image: url(/static/images/1111.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+background-size: cover;
+}

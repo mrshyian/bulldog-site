@@ -1,0 +1,63 @@
+.o_nas_text {
+    box-sizing: border-box;
+    font-family: Courier, monospace; /* American Typewriter, serif */
+    font-size: large;
+}
+
+.kontakt-position {
+    position: absolute;
+    top: 40%;
+    left: 35%;
+}
+
+.section0 {
+    margin-left: 200px;
+    margin-right: 200px;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+}
+
+.section1 {
+    margin-left: 200px;
+    margin-right: 100px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.section2 {
+    margin-left: 0;
+    margin-right: 200px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.section3 {
+    margin-left: 200px;
+    margin-right: 100px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.section4 {
+    margin-left: 0;
+    margin-right: 200px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.section5 {
+    margin-left: 200px;
+    margin-right: 100px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.kontakt {
+    text-align: center;
+}

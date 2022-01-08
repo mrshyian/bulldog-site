@@ -1,0 +1,235 @@
+{% extends 'header.html' %}
+{% block content %}
+
+<div class="o_nas_text">
+
+    <div class="wybierz-pakiet naglowek">Wybierz pakiet</div>
+
+    <div class="container12">
+        <img src=/static/images/1.JPEG alt="Avatar" class="image">
+        <div class="overlay">
+            <div class="text" id="text-container12">
+                <br><div class="czas-sesji1">Czas trwania sesji zdjęciowej to 1 godzina.</div>
+                <br><div class="ubiory1">Liczba ubiorów od stylistki - 2.</div>
+                <br><div class="zdjecia1">Ilość zdjęć z obróbką - 15-20 szt.</div>
+                <br><div class="oczekiwanie1">Czas oczekiwania na zdjęcia - do 2 tygodnie.</div>
+                <br><br>
+                <h3 class="cena1">Cena - 250zł</h3>
+                <div class="info-dod2">
+                    <img src=/static/images/pngwing.com-3.png alt="Avatar" class="image4">
+                    <div class="text3 sdiv1">
+                        <p class="dodinfo">*Informacje <br>dodatkowe</p>
+                        <p class="cennik-dodatki1 cendod">
+                            <br>• Dodatkowe zdjęcie - 15 zł
+                            <br>• Opłata za studio - od 60 zł do 80 zł za godzinę
+                            <br>• Pieszczoty z psem - za darmo :)
+                            <br>&nbsp;
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-nadlowek-pakiet1">
+        <img src=/static/images/Method%20Draw%20Image.png alt="Avatar" class="image2">
+        <div class="text1">
+            <h5 class="pakiet1"> Pakiet "SZYBKI" </h5>
+        </div>
+    </div>
+
+    <div class="container123">
+        <img src=/static/images/2.JPG alt="Avatar" class="image1">
+        <div class="overlay1">
+            <div class="text" id="text-container123">
+                <br><div class="czas-sesji2">Czas trwania sesji zdjęciowej to 2 godziny.</div>
+                <br><div class="ubiory2">Liczba ubiorów od stylistki - 3</div>
+                <br><div class="zdjecia2">Ilość zdjęć z obróbką - 25-30 szt.</div>
+                <br><div class="oczekiwanie2">Czas oczekiwania na zdjęcia - do 2 tygodnie.</div>
+                <br><br>
+                <h3 class="cena2">Cena - 400 zł</h3>
+                <div class="info-dod2">
+                    <img src=/static/images/pngwing.com-3.png alt="Avatar" class="image4">
+                    <div class="text3 sdiv">
+                        <p class="dodinfo1">*Informacje <br>dodatkowe</p>
+                        <p class="cennik-dodatki cendod1">
+                            <br>• Dodatkowe zdjęcie - 15 zł
+                            <br>• Opłata za studio - od 60 zł do 80 zł za godzinę
+                            <br>• Pieszczoty z psem - za darmo :)
+                            <br>&nbsp;
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-nadlowek-pakiet2">
+        <img src=/static/images/Method-Draw-Image-2.png alt="Avatar" class="image3">
+        <div class="text2">
+            <h5 class="pakiet2">Pakiet "MAMY CZAS"</h5>
+        </div>
+    </div>
+</div>
+<script>
+    const langArr = {
+        'naglowek': {
+            'pl': 'Wybierz pakiet',
+            'en': 'Select a package',
+            'ru': 'Выбери пакет'
+        },
+        'czas-sesji1': {
+            'pl': 'Czas trwania sesji zdjęciowej to 1 godzina.',
+            'en': 'The duration of the photo session is 1 hour.',
+            'ru': 'Фотосессия длится 1 час.'
+        },
+        'ubiory1': {
+            'pl': 'Liczba ubiorów od stylistki - 2.',
+            'en': 'Number of outfits from the stylist - 2.',
+            'ru': 'Количество нарядов от стилиста - 2.'
+        },
+        'zdjecia1': {
+            'pl': 'Ilość zdjęć z obróbką - 15-20 szt.',
+            'en': 'Number of photos with retouch - 15-20 pieces.',
+            'ru': 'Количество фотографий с обработкой - 15-20 штук.'
+        },
+        'oczekiwanie1': {
+            'pl': 'Czas oczekiwania na zdjęcia - do 2 tygodnie.',
+            'en': 'Waiting time for photos - up to 2 weeks.',
+            'ru': 'Время ожидания фотографий - до 2 недель.'
+        },
+        'cena1': {
+            'pl': 'Cena - 250zł',
+            'en': 'Price - 250zł',
+            'ru': 'Цена - 250zł'
+        },
+        'dodinfo': {
+            'pl': '*Informacje <br>dodatkowe',
+            'en': '*Information <br> additional',
+            'ru': '*Доп. <br>Информация'
+        },
+        'cendod': {
+            'pl': '<br>• Dodatkowe zdjęcie - 15 zł\n' +
+                '<br>• Opłata za studio - od 60 zł do 80 zł za godzinę\n' +
+                '<br>• Pieszczoty z psem - za darmo :)\n' +
+                '<br>&nbsp;',
+            'en': '<br>• Additional photo - 15 zł\n' +
+                '<br>• Payment for studio rental - from 60 zł to 80 zł per hour\n' +
+                '<br>• Petting a dog - for free :)\n' +
+                '<br>&nbsp;',
+            'ru': '<br>• Докупить фотографию - 15 zł\n' +
+                '<br>• Стоимость студии - oт 60 zł до 80 zł за час\n' +
+                '<br>• Обнимашки с псом - бесплатно :)\n' +
+                '<br>&nbsp;'
+        },
+        'dodinfo1': {
+            'pl': '*Informacje <br>dodatkowe',
+            'en': '*Information <br> additional',
+            'ru': '*Доп. <br>Информация'
+        },
+        'cendod1': {
+            'pl': '<br>• Dodatkowe zdjęcie - 15 zł\n' +
+                '<br>• Opłata za studio - od 60 zł do 80 zł za godzinę\n' +
+                '<br>• Pieszczoty z psem - za darmo :)\n' +
+                '<br>&nbsp;',
+            'en': '<br>• Additional photo - 15 zł\n' +
+                '<br>• Payment for studio rental - from 60 zł to 80 zł per hour\n' +
+                '<br>• Petting a dog - for free :)\n' +
+                '<br>&nbsp;',
+            'ru': '<br>• Докупить фотографию - 15 zł\n' +
+                '<br>• Стоимость студии - oт 60 zł до 80 zł за час\n' +
+                '<br>• Обнимашки с псом - бесплатно :)\n' +
+                '<br>&nbsp;'
+        },
+        'czas-sesji2': {
+            'pl': 'Czas trwania sesji zdjęciowej to 2 godziny.',
+            'en': 'The duration of the photo session is 2 hours.',
+            'ru': 'Фотосессия длится 2 часа.'
+        },
+        'ubiory2': {
+            'pl': 'Liczba ubiorów od stylistki - 3.',
+            'en': 'Number of outfits from the stylist - 3.',
+            'ru': 'Количество нарядов от стилиста - 3.'
+        },
+        'zdjecia2': {
+            'pl': 'Ilość zdjęć z obróbką - 15-20 szt.',
+            'en': 'Number of photos with retouch - 15-20 pieces.',
+            'ru': 'Количество фотографий с обработкой - 25-30 штук.'
+        },
+        'oczekiwanie2': {
+            'pl': 'Czas oczekiwania na zdjęcia - do 2 tygodnie.',
+            'en': 'Waiting time for photos - up to 2 weeks.',
+            'ru': 'Время ожидания фотографий - до 2 недель.'
+        },
+        'cena2': {
+            'pl': 'Cena - 400zł',
+            'en': 'Price - 400zł',
+            'ru': 'Цена - 400zł'
+        },
+        'pakiet2': {
+            'pl': 'Pakiet "MAMY CZAS"',
+            'en': 'The "WE HAVE TIME" package',
+            'ru': 'Пакет "У НАС ЕСТЬ ВРЕМЯ"'
+        },
+        'pakiet1': {
+            'pl': 'Pakiet "SZYBKI"',
+            'en': 'The "FAST" Package ',
+            'ru': 'Пакет "БЫСТРЫЙ"'
+        },
+        'main-page-h1': {
+            'pl': 'Główna',
+            'en': 'Main page',
+            'ru': 'Главня'
+        },
+        'cennik-h1': {
+            'pl': 'Cennik',
+            'en': 'Price list',
+            'ru': 'Прайс'
+        },
+        'kontakt-h1': {
+            'pl': 'Kontakt',
+            'en': 'Contact',
+            'ru': 'Контакт'
+        },
+        'o_nas-h1': {
+            'pl': 'O nas',
+            'en': 'About us',
+            'ru': 'О нас'
+        },
+        'title': {
+            'pl': 'Bulldog Photo - Kobieca fotografia',
+            'en': 'Bulldog Photo - Women\'s photography',
+            'ru': 'Bulldog Photo - Женская фотография'
+        }
+    };
+    const allLang = ['ru', 'pl', 'en'];
+    const select = document.querySelector('select');
+    select.addEventListener('change', changeURLLanguage);
+    console.log(select);
+
+    function changeURLLanguage() {
+        let lang = select.value;
+        location.href = window.location.pathname + '#' + lang;
+        location.reload();
+    }
+
+    function changeLanguage() {
+        let hash = window.location.hash;
+        hash = hash.substring(1);
+        if (!allLang.includes(hash)) {
+            location.href = window.location.pathname + '#pl';
+            location.reload();
+        }
+        select.value = hash;
+        for (let key in langArr) {
+            document.querySelector('.' + key).innerHTML = langArr[key][hash];
+        }
+    }
+
+    changeLanguage()
+
+    let idNaglowka = document.getElementsByClassName('cennik-a')[0]
+    idNaglowka.style.backgroundColor='#737373'
+
+    let idNaglowka1 = document.getElementsByClassName('cennik-h1')[0]
+    idNaglowka1.style.color="black"
+</script>
+{% endblock %}
