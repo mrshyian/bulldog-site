@@ -1,4 +1,4 @@
-##BULLDOG SITE
+# BULLDOG SITE
 
 Bulldog-site is a site for clients looking for a photographer.
 
