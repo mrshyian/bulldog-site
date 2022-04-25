@@ -28,3 +28,9 @@ Frontend technologies:
 - JavaScript
 - HTML
 - CSS
+
+
+## Developers team
+
+* [Vladyslav Shyian](https://github.com/mrshyian)
+* [Jakub Gembicki](https://github.com/JakubGem)
